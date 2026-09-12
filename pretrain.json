@@ -1,0 +1,16 @@
+{
+  "unlabeled_image_root": "data/unlabeled",
+  "imagenet_checkpoint": "weights/imagenet_encoder.safetensors",
+  "output_root": "runs/pretrain",
+  "batch_size": 64,
+  "epochs": 30,
+  "warmup_epochs": 3,
+  "encoder_lr": 1e-05,
+  "heads_lr": 0.0001,
+  "weight_decay": 0.05,
+  "drop_path_rate": 0.3,
+  "early_stopping_patience": 8,
+  "save_every_n_epochs": 5,
+  "num_workers": 0,
+  "seed": 42
+}

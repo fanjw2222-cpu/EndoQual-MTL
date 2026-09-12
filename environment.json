@@ -1,0 +1,67 @@
+{
+  "recorded_at_utc": "2026-09-09T16:58:45.059123+00:00",
+  "record_type": "current_execution_environment",
+  "python": "3.10.12",
+  "python_implementation": "CPython",
+  "operating_system": "Linux",
+  "architecture": "x86_64",
+  "packages": {
+    "torch": "2.4.0+cu118",
+    "torchvision": "0.19.0+cu118",
+    "timm": "1.0.21",
+    "numpy": "1.26.4",
+    "pandas": "2.0.3",
+    "Pillow": "10.0.0",
+    "albumentations": "1.4.24",
+    "opencv-python": "4.8.0.76",
+    "opencv-python-headless": "4.12.0.88",
+    "safetensors": "0.6.2",
+    "tensorboard": "2.14.0",
+    "tqdm": "4.67.1",
+    "scikit-learn": "1.3.0",
+    "matplotlib": "3.7.2",
+    "openpyxl": null
+  },
+  "note": "A current environment snapshot does not establish the historical training environment.",
+  "pytorch_runtime": {
+    "torch_version": "2.4.0+cu118",
+    "cuda_build_version": "11.8",
+    "cudnn_version": 90100,
+    "cuda_available": true,
+    "gpus": [
+      {
+        "index": 0,
+        "model": "NVIDIA GeForce RTX 3090",
+        "memory_bytes": 25438126080,
+        "compute_capability": [
+          8,
+          6
+        ]
+      }
+    ],
+    "cuda_matmul_allow_tf32_at_export": false,
+    "cudnn_allow_tf32_at_export": true
+  },
+  "weight_files": [
+    {
+      "filename": "endoqual_final.pth",
+      "status": "hashed",
+      "size_bytes": 780233849,
+      "sha256": "e5d3bdea541b98edc00222bf3b5fe41eda935d65be755efcbf1fea3a4aae5ce0"
+    },
+    {
+      "filename": "ssl_encoder.pth",
+      "status": "hashed",
+      "size_bytes": 780117142,
+      "sha256": "d7dbde922b760a82fde53869b660c26f6a584fc7f7de62ba151641a8beceb42e"
+    }
+  ],
+  "weight_check_status": "complete",
+  "verification": {
+    "scope": "environment metadata and file hashes only",
+    "model_loading_test_performed": false,
+    "inference_test_performed": false
+  },
+  "installed_distribution_count": 152,
+  "requirements_lock_sha256": "6108fea801c0c556ad8553afd0812335d27a25b2cc912d5b787b74d7bd6b4097"
+}

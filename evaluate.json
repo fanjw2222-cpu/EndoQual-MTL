@@ -1,0 +1,40 @@
+{
+  "checkpoint": "weights/endoqual_final.pth",
+  "output_root": "runs/evaluation",
+  "batch_size": 8,
+  "num_workers": 0,
+  "device": "auto",
+  "seed": 42,
+  "n_bootstrap": 1000,
+  "calibration_bins": 5,
+  "min_valid_bootstrap_fraction": 0.95,
+  "make_plots": true,
+  "write_excel": true,
+  "columns": {
+    "filename": "filename",
+    "patient_id": "patient_id",
+    "lesion_id": "lesion_id",
+    "main": "main_class",
+    "structure_clarity": "structure_clarity",
+    "stain_wash": "stain_wash",
+    "focus": "blurriness",
+    "brightness": "brightness"
+  },
+  "cohorts": [
+    {
+      "name": "Internal",
+      "csv": "data/annotations/internal_test.csv",
+      "image_root": "data/internal",
+      "split_column": "split",
+      "split_value": "test"
+    },
+    {
+      "name": "External",
+      "csv": "data/annotations/external_test.csv",
+      "image_root": "data/external",
+      "split_column": null,
+      "split_value": null
+    }
+  ],
+  "distribution_only": []
+}
